@@ -3,7 +3,7 @@
 """
     
 
-    gpdviz API
+     # Basic sequence  - Register a sensor system - `POST /ss` - Add one or more data streams to the sensor system - `POST /ss/{sysid}` - Add data stream observations - `POST /ss/{sysid}/{strid}/obs`        
 
     OpenAPI spec version: 0.3.0
     

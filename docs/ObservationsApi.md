@@ -1,14 +1,14 @@
 # swagger_client.ObservationsApi
 
-All URIs are relative to *http://tsauv.shore.mbari.org/gpdviz/api/*
+All URIs are relative to *http://localhost:5050/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**add_obs**](ObservationsApi.md#add_obs) | **POST** /ss/{sysid}/{strid}/obs | Add observations
+[**add_observations**](ObservationsApi.md#add_observations) | **POST** /ss/{sysid}/{strid}/obs | Add observations
 
 
-# **add_obs**
-> dict(str, float) add_obs(sysid, strid, body)
+# **add_observations**
+> dict(str, float) add_observations(sysid, strid, body)
 
 Add observations
 
@@ -30,10 +30,10 @@ body = swagger_client.ObservationsRegister() # ObservationsRegister | The observ
 
 try: 
     # Add observations
-    api_response = api_instance.add_obs(sysid, strid, body)
+    api_response = api_instance.add_observations(sysid, strid, body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ObservationsApi->add_obs: %s\n" % e)
+    print("Exception when calling ObservationsApi->add_observations: %s\n" % e)
 ```
 
 ### Parameters
