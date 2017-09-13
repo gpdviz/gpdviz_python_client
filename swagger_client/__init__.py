@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    
+    Gpdviz REST API
 
-     # Basic sequence  - Register a sensor system - `POST /ss` - Add one or more data streams to the sensor system - `POST /ss/{sysid}` - Add data stream observations - `POST /ss/{sysid}/{strid}/obs`        
+    The Gpdviz REST API deals with three kinds of resources: sensor systems, data streams, and observations.
 
     OpenAPI spec version: 0.3.1
     
@@ -15,10 +15,6 @@ from __future__ import absolute_import
 
 # import models into sdk package
 from .models.data_stream import DataStream
-from .models.feature import Feature
-from .models.geometry import Geometry
-from .models.js_object import JsObject
-from .models.js_value import JsValue
 from .models.lat_lon import LatLon
 from .models.obs_data import ObsData
 from .models.observations_register import ObservationsRegister
@@ -28,7 +24,6 @@ from .models.scalar_data import ScalarData
 from .models.sensor_system import SensorSystem
 from .models.stream_register import StreamRegister
 from .models.variable_def import VariableDef
-from .models.vertex_description import VertexDescription
 
 # import apis into sdk package
 from .apis.observations_api import ObservationsApi

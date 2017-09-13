@@ -1,8 +1,8 @@
 # coding: utf-8
 """
-    
+    Gpdviz REST API
 
-     # Basic sequence  - Register a sensor system - `POST /ss` - Add one or more data streams to the sensor system - `POST /ss/{sysid}` - Add data stream observations - `POST /ss/{sysid}/{strid}/obs`        
+    The Gpdviz REST API deals with three kinds of resources: sensor systems, data streams, and observations.
 
     OpenAPI spec version: 0.3.1
     

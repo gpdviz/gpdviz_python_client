@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    
+    Gpdviz REST API
 
-     # Basic sequence  - Register a sensor system - `POST /ss` - Add one or more data streams to the sensor system - `POST /ss/{sysid}` - Add data stream observations - `POST /ss/{sysid}/{strid}/obs`        
+    The Gpdviz REST API deals with three kinds of resources: sensor systems, data streams, and observations.
 
     OpenAPI spec version: 0.3.1
     
@@ -31,8 +31,8 @@ class ObsData(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'feature': 'Feature',
-        'geometry': 'Geometry',
+        'feature': 'object',
+        'geometry': 'object',
         'scalar_data': 'ScalarData'
     }
 
@@ -64,7 +64,7 @@ class ObsData(object):
         Gets the feature of this ObsData.
 
         :return: The feature of this ObsData.
-        :rtype: Feature
+        :rtype: object
         """
         return self._feature
 
@@ -74,7 +74,7 @@ class ObsData(object):
         Sets the feature of this ObsData.
 
         :param feature: The feature of this ObsData.
-        :type: Feature
+        :type: object
         """
 
         self._feature = feature
@@ -85,7 +85,7 @@ class ObsData(object):
         Gets the geometry of this ObsData.
 
         :return: The geometry of this ObsData.
-        :rtype: Geometry
+        :rtype: object
         """
         return self._geometry
 
@@ -95,7 +95,7 @@ class ObsData(object):
         Sets the geometry of this ObsData.
 
         :param geometry: The geometry of this ObsData.
-        :type: Geometry
+        :type: object
         """
 
         self._geometry = geometry

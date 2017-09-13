@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    
+    Gpdviz REST API
 
-     # Basic sequence  - Register a sensor system - `POST /ss` - Add one or more data streams to the sensor system - `POST /ss/{sysid}` - Add data stream observations - `POST /ss/{sysid}/{strid}/obs`        
+    The Gpdviz REST API deals with three kinds of resources: sensor systems, data streams, and observations.
 
     OpenAPI spec version: 0.3.1
     
@@ -28,14 +28,14 @@ REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 setup(
     name=NAME,
     version=VERSION,
-    description="",
+    description="Gpdviz REST API",
     author_email="",
     url="",
-    keywords=["Swagger", ""],
+    keywords=["Swagger", "Gpdviz REST API"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-     # Basic sequence  - Register a sensor system - &#x60;POST /ss&#x60; - Add one or more data streams to the sensor system - &#x60;POST /ss/{sysid}&#x60; - Add data stream observations - &#x60;POST /ss/{sysid}/{strid}/obs&#x60;        
+    The Gpdviz REST API deals with three kinds of resources: sensor systems, data streams, and observations.
     """
 )

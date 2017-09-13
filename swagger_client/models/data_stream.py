@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    
+    Gpdviz REST API
 
-     # Basic sequence  - Register a sensor system - `POST /ss` - Add one or more data streams to the sensor system - `POST /ss/{sysid}` - Add data stream observations - `POST /ss/{sysid}/{strid}/obs`        
+    The Gpdviz REST API deals with three kinds of resources: sensor systems, data streams, and observations.
 
     OpenAPI spec version: 0.3.1
     
@@ -34,10 +34,10 @@ class DataStream(object):
         'strid': 'str',
         'name': 'str',
         'description': 'str',
-        'map_style': 'JsObject',
+        'map_style': 'object',
         'z_order': 'int',
         'variables': 'list[VariableDef]',
-        'chart_style': 'JsObject',
+        'chart_style': 'object',
         'observations': 'dict(str, list[ObsData])'
     }
 
@@ -152,7 +152,7 @@ class DataStream(object):
         Gets the map_style of this DataStream.
 
         :return: The map_style of this DataStream.
-        :rtype: JsObject
+        :rtype: object
         """
         return self._map_style
 
@@ -162,7 +162,7 @@ class DataStream(object):
         Sets the map_style of this DataStream.
 
         :param map_style: The map_style of this DataStream.
-        :type: JsObject
+        :type: object
         """
 
         self._map_style = map_style
@@ -217,7 +217,7 @@ class DataStream(object):
         Gets the chart_style of this DataStream.
 
         :return: The chart_style of this DataStream.
-        :rtype: JsObject
+        :rtype: object
         """
         return self._chart_style
 
@@ -227,7 +227,7 @@ class DataStream(object):
         Sets the chart_style of this DataStream.
 
         :param chart_style: The chart_style of this DataStream.
-        :type: JsObject
+        :type: object
         """
 
         self._chart_style = chart_style

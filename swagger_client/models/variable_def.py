@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    
+    Gpdviz REST API
 
-     # Basic sequence  - Register a sensor system - `POST /ss` - Add one or more data streams to the sensor system - `POST /ss/{sysid}` - Add data stream observations - `POST /ss/{sysid}/{strid}/obs`        
+    The Gpdviz REST API deals with three kinds of resources: sensor systems, data streams, and observations.
 
     OpenAPI spec version: 0.3.1
     
@@ -33,7 +33,7 @@ class VariableDef(object):
     swagger_types = {
         'name': 'str',
         'units': 'str',
-        'chart_style': 'JsObject'
+        'chart_style': 'object'
     }
 
     attribute_map = {
@@ -107,7 +107,7 @@ class VariableDef(object):
         Gets the chart_style of this VariableDef.
 
         :return: The chart_style of this VariableDef.
-        :rtype: JsObject
+        :rtype: object
         """
         return self._chart_style
 
@@ -117,7 +117,7 @@ class VariableDef(object):
         Sets the chart_style of this VariableDef.
 
         :param chart_style: The chart_style of this VariableDef.
-        :type: JsObject
+        :type: object
         """
 
         self._chart_style = chart_style
