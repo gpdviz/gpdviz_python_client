@@ -1,15 +1,13 @@
-# StreamRegister
+# ObservationsSummary
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**sysid** | **str** |  | 
 **strid** | **str** |  | 
-**name** | **str** |  | [optional] 
-**description** | **str** |  | [optional] 
-**map_style** | **object** |  | [optional] 
-**z_order** | **float** |  | [optional] 
-**variables** | [**list[VariableDef]**](VariableDef.md) |  | [optional] 
-**chart_style** | **object** |  | [optional] 
+**time** | **str** |  | [optional] 
+**added** | **float** |  | [optional] 
+**removed** | **float** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -19,24 +19,24 @@ import unittest
 
 import swagger_client
 from swagger_client.rest import ApiException
-from swagger_client.models.variable_def import VariableDef
+from swagger_client.apis.variable_definition_api import VariableDefinitionApi
 
 
-class TestVariableDef(unittest.TestCase):
-    """ VariableDef unit test stubs """
+class TestVariableDefinitionApi(unittest.TestCase):
+    """ VariableDefinitionApi unit test stubs """
 
     def setUp(self):
-        pass
+        self.api = swagger_client.apis.variable_definition_api.VariableDefinitionApi()
 
     def tearDown(self):
         pass
 
-    def testVariableDef(self):
+    def test_add_variable_def(self):
         """
-        Test VariableDef
+        Test case for add_variable_def
+
+        Add variable definition
         """
-        # FIXME: construct object with mandatory attributes with example values
-        #model = swagger_client.models.variable_def.VariableDef()
         pass
 
 

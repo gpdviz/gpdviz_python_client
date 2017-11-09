@@ -1,9 +1,10 @@
-# ObservationsRegister
+# SensorSystemUpdate
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**observations** | **dict(str, list[ObsData])** |  | 
+**push_events** | **float** |  | [optional] 
+**center** | [**LatLon**](LatLon.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

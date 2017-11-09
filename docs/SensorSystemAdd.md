@@ -1,4 +1,4 @@
-# SSRegister
+# SensorSystemAdd
 
 ## Properties
 Name | Type | Description | Notes

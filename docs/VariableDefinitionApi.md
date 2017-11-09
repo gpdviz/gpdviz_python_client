@@ -1,16 +1,16 @@
-# swagger_client.ObservationsApi
+# swagger_client.VariableDefinitionApi
 
 All URIs are relative to *http://localhost:5050/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**add_observations**](ObservationsApi.md#add_observations) | **POST** /ss/{sysid}/{strid}/obs | Add observations
+[**add_variable_def**](VariableDefinitionApi.md#add_variable_def) | **POST** /ss/{sysid}/{strid}/vd | Add variable definition
 
 
-# **add_observations**
-> dict(str, float) add_observations(sysid, strid, body)
+# **add_variable_def**
+> VariableDefSummary add_variable_def(sysid, strid, body)
 
-Add observations
+Add variable definition
 
 
 
@@ -23,17 +23,17 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ObservationsApi()
+api_instance = swagger_client.VariableDefinitionApi()
 sysid = 'sysid_example' # str | sensor system id
 strid = 'strid_example' # str | data stream id
-body = swagger_client.ObservationsRegister() # ObservationsRegister | The observations
+body = swagger_client.VariableDef() # VariableDef | The variable definition
 
 try: 
-    # Add observations
-    api_response = api_instance.add_observations(sysid, strid, body)
+    # Add variable definition
+    api_response = api_instance.add_variable_def(sysid, strid, body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling ObservationsApi->add_observations: %s\n" % e)
+    print("Exception when calling VariableDefinitionApi->add_variable_def: %s\n" % e)
 ```
 
 ### Parameters
@@ -42,11 +42,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sysid** | **str**| sensor system id | 
  **strid** | **str**| data stream id | 
- **body** | [**ObservationsRegister**](ObservationsRegister.md)| The observations | 
+ **body** | [**VariableDef**](VariableDef.md)| The variable definition | 
 
 ### Return type
 
-[**dict(str, float)**](dict.md)
+[**VariableDefSummary**](VariableDefSummary.md)
 
 ### Authorization
 

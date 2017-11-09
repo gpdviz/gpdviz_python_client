@@ -1,16 +1,14 @@
-# DataStream
+# SensorSystemSummary
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**strid** | **str** |  | 
+**sysid** | **str** |  | 
 **name** | **str** |  | [optional] 
 **description** | **str** |  | [optional] 
-**map_style** | **object** |  | [optional] 
-**z_order** | **int** |  | 
-**chart_style** | **object** |  | [optional] 
-**variables** | [**list[VariableDef]**](VariableDef.md) |  | [optional] 
-**observations** | **dict(str, list[ObsData])** |  | [optional] 
+**push_events** | **float** |  | [optional] 
+**center** | [**LatLon**](LatLon.md) |  | [optional] 
+**stream_ids** | **list[str]** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

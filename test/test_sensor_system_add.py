@@ -19,11 +19,11 @@ import unittest
 
 import swagger_client
 from swagger_client.rest import ApiException
-from swagger_client.models.variable_def import VariableDef
+from swagger_client.models.sensor_system_add import SensorSystemAdd
 
 
-class TestVariableDef(unittest.TestCase):
-    """ VariableDef unit test stubs """
+class TestSensorSystemAdd(unittest.TestCase):
+    """ SensorSystemAdd unit test stubs """
 
     def setUp(self):
         pass
@@ -31,12 +31,12 @@ class TestVariableDef(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testVariableDef(self):
+    def testSensorSystemAdd(self):
         """
-        Test VariableDef
+        Test SensorSystemAdd
         """
         # FIXME: construct object with mandatory attributes with example values
-        #model = swagger_client.models.variable_def.VariableDef()
+        #model = swagger_client.models.sensor_system_add.SensorSystemAdd()
         pass
 
 
