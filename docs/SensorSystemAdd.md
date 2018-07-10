@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **description** | **str** |  | [optional] 
 **push_events** | **bool** |  | [optional] 
 **center** | [**LatLon**](LatLon.md) |  | [optional] 
+**zoom** | **float** |  | [optional] 
 **click_listener** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
